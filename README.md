@@ -1,4 +1,7 @@
-[![](https://github.com/denimgroup/threadfix/blob/master/docs/wiki/img/Wiki%20Banner.png)](https://www.threadfix.it/threadfix-community-campaign/)
+# ThreadFix
+
+[![Build Status](https://travis-ci.org/ContinuousSecurityTooling/threadfix.svg?branch=master)](https://travis-ci.org/ContinuousSecurityTooling/threadfix)
+[![Build Status](https://jenkins.martinreinhardt-online.de/buildStatus/icon?job=OSS/continuous-security-tooling/threadfix/master)](https://jenkins.martinreinhardt-online.de/blue/organizations/jenkins/OSS%2Fcontinuous-security-tooling%2Fthreadfix/branches/)
 
 **NOTE**: If you wish to download the latest build of ThreadFix please visit the [ThreadFix download page](http://www.threadfix.org/download/). Please **DO NOT** use the "Download ZIP" function from GitHub. If you DO use the "Download ZIP" function from GitHub you will just get a dump of the source code, but no ready-to-run Tomcat webserver and other facilities that make it really easy to get up and running with ThreadFix quickly. The normal [ThreadFix download](http://www.threadfix.org/download/) build comes pre-packaged and ready-to-run and is the preferred way to start using ThreadFix. You can set up your own [development environment](https://github.com/denimgroup/threadfix/wiki/Environment-Setup) but it is advised that first time users start with the [pre-packaged build](http://www.threadfix.org/download/).
 
