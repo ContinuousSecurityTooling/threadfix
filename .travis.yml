@@ -8,4 +8,4 @@ jdk:
   - openjdk8
 
 install: mvn install -DskipTests=true -q
-script: mvn verify -B -q
+script: mvn clean verify -B -q
