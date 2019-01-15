@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/ContinuousSecurityTooling/threadfix.svg?branch=master)](https://travis-ci.org/ContinuousSecurityTooling/threadfix)
 [![Build Status](https://jenkins.martinreinhardt-online.de/buildStatus/icon?job=OSS/continuous-security-tooling/threadfix/master)](https://jenkins.martinreinhardt-online.de/blue/organizations/jenkins/OSS%2Fcontinuous-security-tooling%2Fthreadfix/branches/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=com.denimgroup.threadfix%3Amaster-pom&metric=alert_status)](https://sonarcloud.io/dashboard?id=com.denimgroup.threadfix%3Amaster-pom)
 
 **NOTE**: If you wish to download the latest build of ThreadFix please visit the [ThreadFix download page](http://www.threadfix.org/download/). Please **DO NOT** use the "Download ZIP" function from GitHub. If you DO use the "Download ZIP" function from GitHub you will just get a dump of the source code, but no ready-to-run Tomcat webserver and other facilities that make it really easy to get up and running with ThreadFix quickly. The normal [ThreadFix download](http://www.threadfix.org/download/) build comes pre-packaged and ready-to-run and is the preferred way to start using ThreadFix. You can set up your own [development environment](https://github.com/denimgroup/threadfix/wiki/Environment-Setup) but it is advised that first time users start with the [pre-packaged build](http://www.threadfix.org/download/).
 
@@ -40,3 +41,18 @@ ThreadFix is a platform with a number of components. Each subdirectory should ha
 * **threadfix-main** - Main ThreadFix server application. This is a Java-based Spring/Hibernate web application with associated web services. Other components of the ThreadFix platform call into the ThreadFix server.
 * **threadfix-scanner-plugin** - Scanner plugins that can connect to a ThreadFix server and import an application's attack surface to improve the thoroughness of dynamic scanning. Also allows for exporting scan results directly into ThreadFix (rather than saving files and uploading them.)
 * **threadfix-update** - Update scripts to upgrade the ThreadFix server database between versions.
+
+
+## Development
+
+If you run into issues with resolving jar, run the following:
+
+```
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/zap/2.2.2/zap-2.2.2.jar -DgroupId=com.owasp.zap -DartifactId=zap -Dversion=2.2.2 -Dpackaging=jar
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/zaphelp/2.2.2/zaphelp-2.2.2.jar -DgroupId=com.owasp.zap -DartifactId=zaphelp -Dversion=2.2.2 -Dpackaging=jar
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/xom/1.2.6/xom-1.2.6.jar -DgroupId=com.owasp.zap -DartifactId=xom -Dversion=1.2.6 -Dpackaging=jar
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/java-getopt/1.0.13/java-getopt-1.0.13.jar -DgroupId=com.owasp.zap -DartifactId=java-getopt -Dversion=1.0.13 -Dpackaging=jar
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/jgoodies-looks/2.4.0/jgoodies-looks-2.4.0.jar -DgroupId=com.owasp.zap -DartifactId=jgoodies-looks -Dversion=2.4.0 -Dpackaging=jar
+./mvnw install:install-file -Dfile=threadfix-scanner-plugin/zaproxy/lib/com/owasp/zap/lablib-checkboxtree/3.2/lablib-checkboxtree-3.2.jar -DgroupId=com.owasp.zap -DartifactId=lablib-checkboxtree -Dversion=3.2 -Dpackaging=jar
+./mvnw install:install-file -Dfile=lib/com/microsoft/tfs/sdk/com.microsoft.tfs.sdk/11.0.0/com.microsoft.tfs.sdk-11.0.0.jar -DgroupId=com.microsoft.tfs.sdk -DartifactId=com.microsoft.tfs.sdk -Dversion=11.0.0 -Dpackaging=jar
+```
