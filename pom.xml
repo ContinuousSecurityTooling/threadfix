@@ -313,9 +313,9 @@
         <slf4j.version>1.7.10</slf4j.version>
         <spring.version>6.1.14</spring.version>
         <spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
-        <springsecurity.version>6.2.7</springsecurity.version>
+        <springsecurity.version>6.3.8</springsecurity.version>
         <javax-el.version>2.2.4</javax-el.version>
-        <spring-ws.version>2.2.4.RELEASE</spring-ws.version>
+        <spring-ws.version>4.0.12</spring-ws.version>
         <tfs-library.version>11.0.0</tfs-library.version>
         <tuckey.version>4.0.4</tuckey.version>
         <validation-api.version>1.1.0.Final</validation-api.version>
