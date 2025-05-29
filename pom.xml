@@ -296,7 +296,7 @@
         <hibernate-validator.version>5.1.3.Final</hibernate-validator.version>
         <itext.version>5.5.8</itext.version>
         <javassist.version>3.19.0-GA</javassist.version>
-        <jgit.version>3.6.2.201501210735-r</jgit.version>
+        <jgit.version>6.10.1.202505221210-r</jgit.version>
         <json.version>20090211</json.version>
         <jstl.version>1.2</jstl.version>
         <jsp-api.version>2.3.1</jsp-api.version>
@@ -313,7 +313,7 @@
         <slf4j.version>1.7.10</slf4j.version>
         <spring.version>6.1.14</spring.version>
         <spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
-        <springsecurity.version>6.3.8</springsecurity.version>
+        <springsecurity.version>6.4.6</springsecurity.version>
         <javax-el.version>2.2.4</javax-el.version>
         <spring-ws.version>4.0.12</spring-ws.version>
         <tfs-library.version>11.0.0</tfs-library.version>
